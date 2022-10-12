@@ -4,101 +4,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FORM</title>
+  <title>Registration Form</title>
 </head>
 <style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg)
-    no-repeat center fixed;
-  background-size: cover;
-  padding: 3rem 4rem;
-  width:100%;
-}
-.fnm{
-  display:flex;
-  flex-direction:column;
-  gap:0.5rem;
- margin:auto;
-justify-items:left;
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-    
-}
-form{
-  width:70%;
-  margin:auto;
-}
-nav {
-  display: flex;
-  
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-nav a {
-  text-decoration: none;
-  text-align: center;
-  font-weight: 600;
-  color: rgb(62, 188, 226);
-}
-a:hover {
-  background-color: rgba(108, 108, 235, 0.74);
-}
-header {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  font-size: 1.5rem;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: rgb(143, 161, 202);
-}
+  body {
+    background: url(http://wrbhttps://cdn.shopify.com/s/files/1/0173/8204/7844/articles/untitleddesign_1_original-2_1000x.png?v=1592869017bradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 4rem;
+    width: 100%;
+  }
 
-label {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-right:;
-  
-}
-input, select, button{
-  padding:1rem;
-  border:none;
-  border-radius:8px;
-  margin-bottom:2rem;
-  outline:none;
-}
-
-input::placeholder{
-font-size: 1rem;
-padding: 15px;
+  .fnm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: auto;
+    justify-items: left;
 
 
-}
+  }
+
+  form {
+    width: 70%;
+    margin: auto;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(62, 188, 226);
+  }
+
+  a:hover {
+    background-color: rgba(108, 108, 235, 0.74);
+  }
+
+  header {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(143, 161, 202);
+  }
+
+  label {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+  }
+
+  input,
+  select,
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    outline: none;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+    padding: 15px;
 
 
-button{
-background-color: rgba(15, 107, 187, 0.781);
-    color:black;
-  font-size:2rem;
-  font-weight:600;
+  }
+
+
+  button {
+    background-color: rgba(15, 107, 187, 0.781);
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
     cursor: pointer;
     padding: 1rem 2rem;
-  font-size: 18px;
-  border-radius: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: color .6s, background-color .5s, font-weight .5s;
 
-  
-  
-}
-button:hover{
+
+
+  }
+
+  button:hover {
     background-color: rgba(108, 108, 235, 0.74);
-  color:#ffffff;
-  font-weight:500;
-}
+    color: #ffffff;
+    font-weight: 500;
+  }
 </style>
+
 <body>
   <nav>
     <a href="registration.html" class="registration">REGISTRATION</a>
@@ -109,7 +121,7 @@ button:hover{
   <form action="">
 
     <div class='fnm'>
-      <label for="fname" >First Name: </label>
+      <label for="fname">First Name: </label>
       <input type="text" name="fname" placeholder="First Name" required id="">
     </div>
     <div class='fnm'>
