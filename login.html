@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+  </head>
+  <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        body {
+          background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg)
+            no-repeat center fixed;
+          background-size: cover;
+          padding: 3rem 4rem;
+  width:100%;
+        }
+        .emn{
+          display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+ margin:auto;
+justify-items:left;
+        }
+        form{
+          width: 70%;
+          margin: auto;
+        }
+        nav {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 3rem;
+        }
+        nav a {
+          text-decoration: none;
+          text-align: center;
+          display: inline;
+          font-weight: lighter;
+          color: rgb(62, 188, 226);
+        }
+        a:hover {
+          background-color: rgba(108, 108, 235, 0.74);
+        }
+      
+         header {
+          text-align: center;
+          color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(143, 161, 202);
+        }
+       label{
+        font-size: 1.5rem;
+  font-weight: 500;
+  margin-right:;
+       }
+        
+input, select, button{
+  padding:1rem;
+  border:none;
+  border-radius:8px;
+  margin-bottom:2rem;
+  outline:none;}
+
+input::placeholder {
+    font-size: 1rem;
+padding: 15px;
+
+}
+        button {
+         background-color: rgba(15, 107, 187, 0.781);
+    color: black;
+          padding: 1rem 2rem;
+          cursor: pointer;
+           font-size:1rem;
+  font-weight:600;
+          border-radius: 8px;
+        }
+        button:hover {
+          background-color: rgba(108, 108, 235, 0.74);
+         color:#ffffff;
+  font-weight:500;
+        }
+
+      </style>
+  <body>
+     <nav>
+        <a href="index.html" class="registration"> REGISTRATION </a>
+        <a href="login.html" class="login">LOGIN</a>
+        
+      </nav>
+      <header>GET STARTED</header>
+    <form action="">
+      
+     
+      <div class="emn">
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          maxlength="20"
+          minlength="3"
+          required >
+      </div>
+      <div class="emn">
+        <label for="psw">Password: </label>
+        <input type="text" name="psw" id="" pattern="(?=,\d)(?=."[a-z]).{8}"
+        title="Must contain at least one number and one uppercase and lowercase,
+        and at least 8 or more characters"required />
+      </div>
+      <button type="submit"><a href="success.html">SIGN IN</a></button>
+    </form>
+  </body>
+</html>

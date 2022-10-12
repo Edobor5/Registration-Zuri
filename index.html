@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+</head>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg)
+    no-repeat center fixed;
+  background-size: cover;
+  padding: 3rem 4rem;
+  width:100%;
+}
+.fnm{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+ margin:auto;
+justify-items:left;
+
+    
+}
+form{
+  width:70%;
+  margin:auto;
+}
+nav {
+  display: flex;
+  
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+nav a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(62, 188, 226);
+}
+a:hover {
+  background-color: rgba(108, 108, 235, 0.74);
+}
+header {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(143, 161, 202);
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right:;
+  
+}
+input, select, button{
+  padding:1rem;
+  border:none;
+  border-radius:8px;
+  margin-bottom:2rem;
+  outline:none;
+}
+
+input::placeholder{
+font-size: 1rem;
+padding: 15px;
+
+
+}
+
+
+button{
+background-color: rgba(15, 107, 187, 0.781);
+    color:black;
+  font-size:2rem;
+  font-weight:600;
+    cursor: pointer;
+    padding: 1rem 2rem;
+  font-size: 18px;
+  border-radius: 8px;
+
+  
+  
+}
+button:hover{
+    background-color: rgba(108, 108, 235, 0.74);
+  color:#ffffff;
+  font-weight:500;
+}
+</style>
+<body>
+  <nav>
+    <a href="registration.html" class="registration">REGISTRATION</a>
+    <a href="login.html" class="login">LOGIN</a>
+    <a href="success.html" class="register-page">SUCCESS REGISTER PAGE</a>
+  </nav>
+  <header> YOUR BASIC INFO</header>
+  <form action="">
+
+    <div class='fnm'>
+      <label for="fname" >First Name: </label>
+      <input type="text" name="fname" placeholder="First Name" required id="">
+    </div>
+    <div class='fnm'>
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" placeholder="Last Name" required id="">
+    </div>
+    <div class='fnm'>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number">
+    </div>
+    <div class='fnm'>
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="Email Address" maxlength="20" minlength="3" required id="">
+    </div>
+    <div class='fnm'>
+      <label for="gender">Gender: </label>
+      <select name="Gender" id="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="I'd rather not say">I'd rather not say</option>
+      </select>
+    </div>
+    <div class='fnm'>
+      <label for="D.O.B">Date Of Birth: </label>
+      <input type="date" name="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+    </div>
+    <div class='fnm'>
+      <label for="favcolor">Select Your Favourite Color:</label>
+      <input type="color" id="favcolor" placeholder="" name="favcolor" value="#ff0000">
+
+    </div>
+
+    <button type="submit">SUBMIT</button>
+
+  </form>
+</body>
+
+</html>
